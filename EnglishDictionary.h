@@ -15,7 +15,7 @@ public:
     virtual ~EnglishDictionary();
 
     void add(std::string word, std::string definition);
+    void removeFirst(std::string word);
+    void removeAll(std::string word);
     void printDictionary(bool fromStart) const;
 };
-
-#endif // ENGLISHDICTIONARY_H
