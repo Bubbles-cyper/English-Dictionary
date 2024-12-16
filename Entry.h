@@ -1,5 +1,4 @@
 // Entry.h
-#ifndef ENTRY_H
 #define ENTRY_H
 
 template <typename K, typename V>
@@ -19,4 +18,3 @@ public:
     void setV(V value) { _value = value; }
 };
 
-#endif // ENTRY_H
