@@ -1,5 +1,4 @@
 // DNodeG.h
-#ifndef DNODEG_H
 #define DNODEG_H
 
 #include "Entry.h"
