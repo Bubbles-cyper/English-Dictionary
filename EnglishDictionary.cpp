@@ -21,3 +21,4 @@ void EnglishDictionary::removeAll(std::string word) {
 void EnglishDictionary::printDictionary(bool fromStart) const {
     dictionary.print(fromStart);
 }
+
