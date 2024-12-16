@@ -41,6 +41,17 @@ void NodeDictionaryG<K, V>::erase(K key) {
     while (current != trailer) {
         if (current->entry.getK() == key) {
             removeNode(current);
+        }
+        current = current->next;
+    }
+}
+
+template <typename K, typename V>
+void NodeDictionaryG<K, V>::eraseFirst(K key) {
+    DNodeG<K, V>* current = header->next;
+    while (current != trailer) {
+        if (current->entry.getK() == key) {
+            removeNode(current);
             return;
         }
         current = current->next;
