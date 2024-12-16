@@ -12,5 +12,3 @@ struct DNodeG {
 
     DNodeG(Entry<K, V> e, DNodeG* p = nullptr, DNodeG* n = nullptr) : entry(e), prev(p), next(n) {}
 };
-
-#endif // DNODEG_H
