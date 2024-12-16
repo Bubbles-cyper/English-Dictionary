@@ -1,5 +1,4 @@
 // EnglishDictionary.h
-#ifndef ENGLISHDICTIONARY_H
 #define ENGLISHDICTIONARY_H
 
 #include "NodeDictionaryG.h"
