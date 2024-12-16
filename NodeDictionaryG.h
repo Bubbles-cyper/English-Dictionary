@@ -25,6 +25,7 @@ public:
 
     void put(K key, V value);
     void erase(K key);
+    void eraseFirst(K key);
     void print(bool fromStart) const;
 };
 
