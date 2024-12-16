@@ -1,0 +1,59 @@
+#include "EnglishDictionary.h"
+#include <iostream>
+
+int main() {
+    EnglishDictionary myDict("My English Dictionary");
+
+    // Adding 10 words with definitions, including repetitions
+    myDict.add("apple", "A fruit");
+    myDict.add("apple", "A tech company");
+    myDict.add("banana", "A yellow fruit");
+    myDict.add("banana", "A tropical fruit");
+    myDict.add("car", "A vehicle");
+    myDict.add("car", "An automobile");
+    myDict.add("dog", "A domesticated animal");
+    myDict.add("dog", "A loyal pet");
+    myDict.add("book", "A set of written pages");
+    myDict.add("book", "To arrange for someone to do something");
+
+    // Print all entries from the start
+    std::cout << "\nDictionary contents (from start):\n";
+    myDict.printDictionary(true);
+
+    // Print all entries from the end
+    std::cout << "\nDictionary contents (from end):\n";
+    myDict.printDictionary(false);
+
+    // Print definitions for "banana" (2 definitions) from start and end
+    std::cout << "\nDefinitions for 'banana' (from start):\n";
+    myDict.printDictionary(true); // Modify this to range search in advanced implementation
+
+    std::cout << "\nDefinitions for 'banana' (from end):\n";
+    myDict.printDictionary(false); // Modify this to range search in advanced implementation
+
+    // Remove the first definition from "apple" (3 definitions)
+    std::cout << "\nRemoving first definition of 'apple'.\n";
+    myDict.removeFirst("apple");
+
+    // Search and print definitions for "car" (4 definitions)
+    std::cout << "\nDefinitions for 'car':\n";
+    myDict.printDictionary(true); // Modify for actual search
+
+    // Remove the first definition from "car"
+    std::cout << "\nRemoving first definition of 'car'.\n";
+    myDict.removeFirst("car");
+
+    // Remove all definitions for "banana"
+    std::cout << "\nRemoving all definitions of 'banana'.\n";
+    myDict.removeAll("banana");
+
+    // Print the updated dictionary from start
+    std::cout << "\nUpdated dictionary contents (from start):\n";
+    myDict.printDictionary(true);
+
+    // Print the updated dictionary from end
+    std::cout << "\nUpdated dictionary contents (from end):\n";
+    myDict.printDictionary(false);
+
+    return 0;
+}
